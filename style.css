@@ -1,0 +1,11 @@
+ul {
+    list-style-type: none;
+}
+
+img {
+    border: 6px solid beige;
+}
+
+a img {
+    width: 50%;
+}
