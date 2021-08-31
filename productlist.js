@@ -5,7 +5,7 @@ console.log(category);
 let url = "https://kea-alt-del.dk/t7/api/products?limit=100";
 
 if (category != null) {
-  url = "https://kea-alt-del.dk/t7/api/products?category=" + category;
+  url = "https://kea-alt-del.dk/t7/api/products?limit=100&category=" + category;
 }
 
 fetch(url)
@@ -17,9 +17,15 @@ function showProduct(product) {
   const clone = template.cloneNode(true);
   clone.querySelector("a").href = "product.html?id=" + product.id;
   clone.querySelector("h2").textContent = product.productdisplayname;
-  clone.querySelector(
-    "img"
-  ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+  clone.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+  clone.querySelector(".old-price").textContent = product.price;
+
+  if (product.discount != null) {
+    clone.querySelector(".old-price").classList.add("crossout");
+    clone.querySelector(".new-price").textContent =
+      (product.price - (product.discount / 100) * product.price).toFixed(2) + "kr.";
+  }
+
   const parent = document.querySelector("div");
   parent.appendChild(clone);
 }

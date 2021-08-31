@@ -6,19 +6,27 @@ img {
   border: 2px solid beige;
 }
 
-a img {
-  width: 50%;
+.productImg {
+  display: block;
 }
 
 .productGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-gap: 0.5rem;
 }
 
-.productGrid > a {
-  border: 3px solid pink;
+.productGrid > div * {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-a img {
-  align-self: center;
+.crossout {
+  text-decoration: line-through;
+  color: #555;
+}
+
+h4 {
+  margin: 0.2rem;
 }
