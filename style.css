@@ -30,3 +30,30 @@ img {
 h4 {
   margin: 0.2rem;
 }
+
+.imageHolder {
+  position: relative;
+}
+
+.discount {
+  position: absolute;
+  /* top: 0.5rem; */
+  left: 0;
+  right: 0;
+  bottom: 0.5rem;
+}
+
+.discount p {
+  width: max-content;
+  margin: 0;
+  padding: 0.5rem; /* 0.7rem 0.5rem 0.7rem;*/
+  font-size: 1.3em;
+  background-color: rgb(199, 0, 40);
+  opacity: 80%;
+  font-weight: 400;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}

@@ -24,6 +24,8 @@ function showProduct(product) {
     clone.querySelector(".old-price").classList.add("crossout");
     clone.querySelector(".new-price").textContent =
       (product.price - (product.discount / 100) * product.price).toFixed(2) + "kr.";
+    clone.querySelector(".discount").classList.remove("hidden");
+    clone.querySelector(".discount > p").textContent = "-" + product.discount + "%";
   }
 
   const parent = document.querySelector("div");
