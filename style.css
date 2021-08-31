@@ -1,11 +1,20 @@
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 img {
-    border: 6px solid beige;
+  border: 2px solid beige;
 }
 
 a img {
-    width: 50%;
+  width: 50%;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+}
+
+.productGrid > a {
+  border: 3px solid pink;
 }
