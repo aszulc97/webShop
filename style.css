@@ -18,3 +18,7 @@ a img {
 .productGrid > a {
   border: 3px solid pink;
 }
+
+a img {
+  align-self: center;
+}
