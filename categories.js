@@ -9,7 +9,8 @@ fetch(url)
 function showCategory(category) {
   const template = document.querySelector("template").content;
   const clone = template.cloneNode(true);
-  //   clone.querySelector("a").href = "product.html?id=" + product.id;
+  clone.querySelector("a").href =
+    "productlist.html?category=" + category.category;
   clone.querySelector("h3").textContent = category.category;
   const parent = document.querySelector("nav");
   parent.appendChild(clone);

@@ -1,6 +1,12 @@
-// const urlParams = new URLSearchParams(window.location.search);
-// const productID = urlParams.get("id");
-const url = "https://kea-alt-del.dk/t7/api/products?limit=100";
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
+
+console.log(category);
+let url = "https://kea-alt-del.dk/t7/api/products?limit=100";
+
+if (category != null) {
+  url = "https://kea-alt-del.dk/t7/api/products?category=" + category;
+}
 
 fetch(url)
   .then((res) => res.json())
