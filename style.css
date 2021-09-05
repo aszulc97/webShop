@@ -127,6 +127,12 @@ section > * {
   margin: 0;
 }
 
+.description {
+  font-size: 1.5rem;
+  color: #666;
+  padding: 3rem 0 0 1rem;
+}
+
 @media (max-width: 1000px) {
   .productDisplay {
     flex-direction: column;
