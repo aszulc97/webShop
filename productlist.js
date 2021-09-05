@@ -28,6 +28,11 @@ function showProduct(product) {
     clone.querySelector(".discount > p").textContent = "-" + product.discount + "%";
   }
 
+  if (product.soldout === 1) {
+    clone.querySelector(".gridItem").classList.add("soldout");
+    clone.querySelector(".soldoutBanner").classList.remove("hidden");
+  }
+
   const parent = document.querySelector("div");
   parent.appendChild(clone);
 }

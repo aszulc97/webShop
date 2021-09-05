@@ -137,6 +137,33 @@ section :last-child {
   padding: 3rem 0 0 1rem;
 }
 
+.soldout {
+  opacity: 50%;
+}
+
+.soldoutBanner {
+  position: absolute;
+  height: fit-content;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.soldoutBanner p {
+  width: max-content;
+  margin: 0 auto 0 auto;
+  padding: 0.5rem; /* 0.7rem 0.5rem 0.7rem;*/
+  font-size: 4em;
+  background-color: grey;
+  opacity: 80%;
+  font-weight: 400;
+  color: white;
+  left: 0;
+  right: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
 @media (max-width: 1000px) {
   .productDisplay {
     flex-direction: column;
