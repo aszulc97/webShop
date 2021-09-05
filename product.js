@@ -11,6 +11,8 @@ function showProduct(product) {
   document.querySelector(".gender").textContent = product.gender;
   document.querySelector(".brand").textContent = product.brandname;
   document.querySelector(".season").textContent = product.season;
+  document.querySelector(".category").textContent = product.category;
+  document.querySelector(".category").href = "productlist.html?category=" + product.category;
   document.querySelector(".productName").textContent = product.productdisplayname;
   document.querySelector(
     ".productImg"

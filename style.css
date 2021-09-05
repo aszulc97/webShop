@@ -127,6 +127,10 @@ section > * {
   margin: 0;
 }
 
+section :last-child {
+  border: none;
+}
+
 .description {
   font-size: 1.5rem;
   color: #666;
