@@ -14,13 +14,31 @@
       <hr />
       <nav>
         <ul>
-          <li><a href="productlist.html">ALL PRODUCTS</a></li>
+          <li><a href="index.html">ALL PRODUCTS</a></li>
           <li><a href="categories.html">CATEGORIES</a></li>
         </ul>
       </nav>
       <hr />
     </header>
-    <main></main>
+    <main>
+      <div class="productGrid">
+        <template>
+          <div class="gridItem">
+            <a href="product.html?id=1525">
+              <div class="imageHolder">
+                <div class="discount hidden">
+                  <p>-12%</p>
+                </div>
+                <img class="productImg" src="" />
+              </div>
+              <h2>Sahara Team India Fanwear Round Neck Jerse</h2>
+            </a>
+            <h4 class="old-price"></h4>
+            <h4 class="new-price"></h4>
+          </div>
+        </template>
+      </div>
+    </main>
     <footer>
       <hr />
       Author: Agata Szulc @2021 <br />
@@ -29,6 +47,6 @@
       <a href="https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset"> this</a>
       dataset.
     </footer>
-    <script></script>
+    <script src="productlist.js"></script>
   </body>
 </html>
